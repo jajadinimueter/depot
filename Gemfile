@@ -3,6 +3,7 @@ source 'https://rubygems.org'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.1'
 
+# Use PostgreSQL (gem always installed)
 gem "pg"
 
 # Use SCSS for stylesheets
@@ -31,13 +32,13 @@ group :doc do
   gem 'sdoc', require: false
 end
 
-group :production, :staging do
-  gem 'pg'
-end
+# group :production, :staging do
+#   gem 'pg'
+# end
 
-group :development, :test do
-  gem 'sqlite3', :require => 'sqlite3'
-end
+#group :development, :test do
+#  gem 'sqlite3', :require => 'sqlite3'
+# end
 
 gem 'rails_12factor', group: :production
 
