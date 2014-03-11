@@ -1,10 +1,11 @@
 Ruby on Rails
 =============
 
-* Local: (http://localhost:3000)
-* My app on heroku: (http://blooming-savannah-7464.herokuapp.com/products)
+* Local: http://localhost:3000
+* My app on heroku: http://blooming-savannah-7464.herokuapp.com/products
 
 
+&nbsp;
 
 
 Getting started
@@ -14,7 +15,7 @@ Getting started
 * Test data: db/seeds.rb
 
 
-rails new depot		// create new rails application
+rails new depot   		// create new rails application
 
 cd depot
 
@@ -33,7 +34,7 @@ rake test:models	// test models
 rake db:test:prepare		// prepare database for test (included in rake test)
 
 
-
+&nbsp;
 
 
 Start PostgreSQL database server
@@ -44,13 +45,13 @@ postgres -D /usr/local/var/postgres
 psql postgres   // to start PostgreSQL console
 
 
-
+&nbsp;
 
 
 Deployment on heroku.com
 ========================
 
-* Important link: (https://devcenter.heroku.com/articles/getting-started-with-rails4#use-postgres)
+* Important link: https://devcenter.heroku.com/articles/getting-started-with-rails4#use-postgres
 
 
 ## Heroku commands
@@ -67,6 +68,8 @@ git ps heroku master		// push local branch into remote branch on Heroku (remote 
 
 
 
+&nbsp;
+
 
 
 
@@ -76,9 +79,13 @@ Git commands
 ## Add Git repository
 
 git init
+
 git add .
+
 git commit -m "Depot Scaffold"
 
+
+&nbsp;
 
 
 ## Git configuration
@@ -94,6 +101,7 @@ git config –-global alias.rb rebase		// add aliases
 git checkout .		// revert
 
 
+&nbsp;
 
 
 ## Git branches
@@ -111,11 +119,12 @@ git remote show heroku	// address of repository on Heroku
 Cf. also this [Git Cheat Sheet](http://cheat.errtheblog.com/s/git).
 
 
+&nbsp;
 
 
 Helpful links
 =============
 
-* Markdown Syntax: (http://daringfireball.net/projects/markdown/syntax)
+* Markdown Syntax: http://daringfireball.net/projects/markdown/syntax
 
 
