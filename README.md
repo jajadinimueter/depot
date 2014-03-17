@@ -8,6 +8,13 @@ Ruby on Rails
 &nbsp;
 
 
+Test: [Git commands](/Git_commands.md)
+
+
+&nbsp;
+
+
+
 Getting started
 ===============
 
@@ -21,17 +28,17 @@ cd depot
 
 ls -p
 
-rails generate scaffold Product title:string description:text image_url:string price:decimal	// Scaffolding
+rails generate scaffold Product title:string description:text image_url:string price:decimal &nbsp;&nbsp;&nbsp; // Scaffolding
 
-rake db:migrate     // apply database changes
+rake db:migrate &nbsp;&nbsp;&nbsp; // apply database changes
 
-rake test		// runt tests (Unit and Controller)
+rake test &nbsp;&nbsp;&nbsp; // runt tests (Unit and Controller)
 
-rake db:seed	// fill table (products) with test data
+rake db:seed &nbsp;&nbsp;&nbsp; // fill table (products) with test data
 
-rake test:models	// test models
+rake test:models &nbsp;&nbsp;&nbsp; // test models
 
-rake db:test:prepare		// prepare database for test (included in rake test)
+rake db:test:prepare &nbsp;&nbsp;&nbsp; // prepare database for test (included in rake test)
 
 
 &nbsp;
@@ -52,7 +59,7 @@ Start PostgreSQL database server
 
 postgres -D /usr/local/var/postgres
 
-psql postgres   // to start PostgreSQL console
+psql postgres &nbsp;&nbsp;&nbsp; // to start PostgreSQL console
 
 
 
@@ -68,113 +75,21 @@ Deployment on heroku.com
 
 ## Heroku commands
 
-git remote show heroku		// address of repository on Heroku
+git remote show heroku &nbsp;&nbsp;&nbsp; // address of repository on Heroku
 
-heroku logs		// console logs of Heroku
+heroku logs &nbsp;&nbsp;&nbsp; // console logs of Heroku
 
-heroku run rake db:migrate		// perform database migrations also on Heroku
+heroku run rake db:migrate &nbsp;&nbsp;&nbsp; // perform database migrations also on Heroku
 
-heroku run rake db:seed		// load data on Heroku
+heroku run rake db:seed &nbsp;&nbsp;&nbsp; // load data on Heroku
 
-git ps heroku master		// push local branch into remote branch on Heroku (remote + branch)
-
-
-
-&nbsp;
-
-
-
-
-Git commands
-============
-
-Test: [Git commands](/Git_commands.md)
-
-
-## Add Git repository
-
-git init
-
-git add .
-
-git commit -m "Depot Scaffold"
-
-
-## Clone existing Git repository
-
-git clone gitosis@git.ibr.cs.tu-bs.de:contiki.git
-
-
-&nbsp;
-
-
-## Git configuration
-
-git config --global --list		// Git configuration
-
-git config –-global alias.rb rebase		// add aliases
-
-
-&nbsp;
-
-
-## Revert
-
-git checkout .		// revert
-
-
-&nbsp;
-
-
-
-## Git branches (server)
-
-cat .git/config		// show branches
-
-git remote show		// list of remotes
-
-git remote show heroku	// address of repository on Heroku
-
-
-### New remote repository (server)
-
-git remote add <name> <giturl>
-
-git remote add origin https://github.com/arktokrates/depot.git
-
-
-&nbsp;
-
-
-
-## Git commit
-
-git add <file>
-
-git rm <file>
-
-git checkout -- readme.txt		// to discard changes in working directory
-
-git commit --amend -m "New commit message"
-
-git show <commit>
-
-git diff a..b	// check changes between two commits
-
-
-## From server to working copy
-
-git pull
-
-git pull -rebase
+git ps heroku master &nbsp;&nbsp;&nbsp; // push local branch into remote branch on Heroku (remote + branch)
 
 
 
 &nbsp;
 
 
-
-Cf. also this [Git Cheat Sheet](http://cheat.errtheblog.com/s/git).
 
 
 &nbsp;

@@ -22,9 +22,9 @@ git clone gitosis@git.ibr.cs.tu-bs.de:contiki.git
 
 ## Git configuration
 
-git config --global --list		// Git configuration
+git config --global --list &nbsp;&nbsp;&nbsp; // Git configuration
 
-git config –-global alias.rb rebase		// add aliases
+git config –-global alias.rb rebase &nbsp;&nbsp;&nbsp; // add aliases
 
 
 &nbsp;
@@ -32,7 +32,7 @@ git config –-global alias.rb rebase		// add aliases
 
 ## Revert
 
-git checkout .		// revert
+git checkout . &nbsp;&nbsp;&nbsp; // revert
 
 
 &nbsp;
@@ -41,11 +41,11 @@ git checkout .		// revert
 
 ## Git branches (server)
 
-cat .git/config		// show branches
+cat .git/config &nbsp;&nbsp;&nbsp; // show branches
 
-git remote show		// list of remotes
+git remote show &nbsp;&nbsp;&nbsp; // list of remotes
 
-git remote show heroku	// address of repository on Heroku
+git remote show heroku &nbsp;&nbsp;&nbsp; // address of repository on Heroku
 
 
 ### New remote repository (server)
@@ -65,13 +65,13 @@ git add <file>
 
 git rm <file>
 
-git checkout -- readme.txt		// to discard changes in working directory
+git checkout -- readme.txt &nbsp;&nbsp;&nbsp; // to discard changes in working directory
 
 git commit --amend -m "New commit message"
 
 git show <commit>
 
-git diff a..b	// check changes between two commits
+git diff a..b &nbsp;&nbsp;&nbsp; // check changes between two commits
 
 
 ## From server to working copy
