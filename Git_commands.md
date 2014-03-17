@@ -2,7 +2,6 @@
 Git commands
 ============
 
-Test: [Git commands](/Git_commands.md)
 
 ## Add Git repository
 

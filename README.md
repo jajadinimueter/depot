@@ -88,6 +88,9 @@ git ps heroku master		// push local branch into remote branch on Heroku (remote 
 Git commands
 ============
 
+Test: [Git commands](/Git_commands.md)
+
+
 ## Add Git repository
 
 git init
