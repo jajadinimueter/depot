@@ -32,7 +32,7 @@ git config –-global alias.rb rebase &nbsp;&nbsp;&nbsp; // add aliases
 
 ## Revert
 
-git checkout . &nbsp;&nbsp;&nbsp; // revert
+git checkout . &nbsp;&nbsp;&nbsp; // revert (or to unstage)
 
 
 &nbsp;
@@ -86,9 +86,9 @@ git pull -rebase
 
 
 
-Cf. also this [Git Cheat Sheet](http://cheat.errtheblog.com/s/git).
+* Cf. also this [Git Cheat Sheet](http://cheat.errtheblog.com/s/git).
 
-[gitignore templates](https://github.com/github/gitignore)
+* [gitignore templates](https://github.com/github/gitignore)
 
 &nbsp;
 

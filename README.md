@@ -8,7 +8,7 @@ Ruby on Rails
 &nbsp;
 
 
-Test: [Git commands](/Git_commands.md)
+* [Git commands](/Git_commands.md)
 
 
 &nbsp;
