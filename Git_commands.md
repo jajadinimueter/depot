@@ -88,6 +88,7 @@ git pull -rebase
 
 Cf. also this [Git Cheat Sheet](http://cheat.errtheblog.com/s/git).
 
+[gitignore templates](https://github.com/github/gitignore)
 
 &nbsp;
 

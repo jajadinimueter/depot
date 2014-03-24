@@ -13,23 +13,23 @@ class ProductTest < ActiveSupport::TestCase
     assert product.errors[:image_url].any?
   end
 
-  test "product price must be positive" do
-    product = Product.new(title:       "My Book Title",
-                          description: "yyy",
-                          image_url:   "zzz.jpg")
-    product.price = -1
-    assert product.invalid?
-    assert_equal ["must be greater than or equal to 0.01"],
-      product.errors[:price]
+  # test "product price must be positive" do
+  #   product = Product.new(title:       "My Book Title",
+  #                         description: "yyy",
+  #                         image_url:   "zzz.jpg")
+  #   product.price = -1
+  #   assert product.invalid?
+  #   assert_equal ["must be greater than or equal to 0.01"],
+  #     product.errors[:price]
 
-    product.price = 0
-    assert product.invalid?
-    assert_equal ["must be greater than or equal to 0.01"], 
-      product.errors[:price]
+  #   product.price = 0
+  #   assert product.invalid?
+  #   assert_equal ["must be greater than or equal to 0.01"], 
+  #     product.errors[:price]
 
-    product.price = 1
-    assert product.valid?
-  end
+  #   product.price = 1
+  #   assert product.valid?
+  # end
 
   def new_product(image_url)
     Product.new(title:       "My Book Title",
@@ -59,7 +59,7 @@ class ProductTest < ActiveSupport::TestCase
                           image_url:   "fred.gif")
 
     assert product.invalid?
-    assert_equal ["has already been taken"], product.errors[:title]
+    assert_equal ["has already been taken."], product.errors[:title]
   end
 
   test "product is not valid without a unique title - i18n" do
@@ -71,5 +71,23 @@ class ProductTest < ActiveSupport::TestCase
     assert product.invalid?
     assert_equal [I18n.translate('errors.messages.taken')],
                  product.errors[:title]
+  end
+
+  test "product price must be positive and a multiple unit of 0.05" do
+    product = Product.new(title:       "My Book Title",
+                          description: "yyy",
+                          image_url:   "zzz.jpg")
+    product.price = -1
+    assert product.invalid?
+    assert_equal ["must be greater than or equal to 0.05."],
+      product.errors[:price]
+    
+    product.price = 0
+    assert product.invalid?
+    assert_equal ["must be greater than or equal to 0.05."],
+      product.errors[:price]
+
+    product.price = 0.95
+    assert product.valid?
   end
 end
