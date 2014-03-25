@@ -45,6 +45,7 @@ rake db:test:prepare &nbsp;&nbsp;&nbsp; // prepare database for test (included i
 
 rails generate controller Store index &nbsp;&nbsp;&nbsp; // Store controller with method index
 
+rake test:controllers &nbsp;&nbsp;&nbsp; // test controllers specifically
 
 &nbsp;
 

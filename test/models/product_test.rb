@@ -59,7 +59,7 @@ class ProductTest < ActiveSupport::TestCase
                           image_url:   "fred.gif")
 
     assert product.invalid?
-    assert_equal ["has already been taken."], product.errors[:title]
+    assert_equal ["has already been taken"], product.errors[:title]
   end
 
   test "product is not valid without a unique title - i18n" do
@@ -79,12 +79,12 @@ class ProductTest < ActiveSupport::TestCase
                           image_url:   "zzz.jpg")
     product.price = -1
     assert product.invalid?
-    assert_equal ["must be greater than or equal to 0.05."],
+    assert_equal ["must be greater than or equal to 0.05"],
       product.errors[:price]
     
     product.price = 0
     assert product.invalid?
-    assert_equal ["must be greater than or equal to 0.05."],
+    assert_equal ["must be greater than or equal to 0.05"],
       product.errors[:price]
 
     product.price = 0.95

@@ -28,5 +28,5 @@ class Product < ActiveRecord::Base
     end
   end
 
-  validate :price_in_five_centimes  
+  validate :price_in_five_centimes
 end
