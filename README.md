@@ -43,6 +43,13 @@ rake db:test:prepare &nbsp;&nbsp;&nbsp; // prepare database for test (included i
 
 &nbsp;
 
+rails generate controller Store index &nbsp;&nbsp;&nbsp; // Store controller with method index
+
+
+&nbsp;
+
+&nbsp;
+
 
 ## Minor issues
 
