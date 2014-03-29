@@ -77,17 +77,16 @@ class ProductTest < ActiveSupport::TestCase
     product = Product.new(title:       "My Book Title",
                           description: "yyy",
                           image_url:   "zzz.jpg")
-    product.price = -1
+    product.price = 0.9
     assert product.invalid?
-    assert_equal ["must be greater than or equal to 0.05"],
-      product.errors[:price]
+    assert product.errors[:price].include? "must be a multiple of 0.05"   # in Java: array_contains, list_contains
     
-    product.price = 0
-    assert product.invalid?
-    assert_equal ["must be greater than or equal to 0.05"],
-      product.errors[:price]
+    # product.price = 0
+    # assert product.invalid?
+    # assert_equal ["must be greater than or equal to 0.05"],
+    #   product.errors[:price]
 
-    product.price = 0.95
-    assert product.valid?
+    # product.price = 0.95
+    # assert product.valid?
   end
 end

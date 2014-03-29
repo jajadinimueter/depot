@@ -11,10 +11,10 @@ class Product < ActiveRecord::Base
   # validates :price, numericality: {greater_than_or_equal_to: 0.01}
   validates :price, presence: true
   validates :price, numericality: {greater_than_or_equal_to: 0.05}
-  # validates :price, format: {
-  #   with: /\A\d{1,6}(\.\d{1}5?)?\z/,
-  #   message: "must be greater than or equal to 0.05"
-  # } # not necessary to convert: :price.to_s
+  validates :price, format: {
+    with: /\A\d{1,6}(\.\d{1}5?)?\z/,
+    message: "must be a multiple of 0.05"
+  } # not necessary to convert: :price.to_s
   validates :title, uniqueness: true
   validates :image_url, allow_blank: true, format: {
     with:    %r{\.(gif|jpg|png)\Z}i,
@@ -22,11 +22,11 @@ class Product < ActiveRecord::Base
   }
 
   # Check, if price is entered as a multiple of 0.05 (steps of 5 centimes)
-  def price_in_five_centimes
-    if price and price % 0.05 != 0
-      errors.add(:price, 'Price must be a multiple of 0.05.')
-    end
-  end
+  # def price_in_five_centimes
+  #   if price and price % 0.05 != 0
+  #     errors.add(:price, 'Price must be a multiple of 0.05.')
+  #   end
+  # end
 
-  validate :price_in_five_centimes
+  # validate :price_in_five_centimes
 end
