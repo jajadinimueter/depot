@@ -2,7 +2,7 @@ Ruby on Rails
 =============
 
 * Local: http://localhost:3000
-* My app on heroku: http://blooming-savannah-7464.herokuapp.com/products
+* My app on heroku: http://blooming-savannah-7464.herokuapp.com
 
 
 &nbsp;
