@@ -20,7 +20,7 @@ class Product < ActiveRecord::Base
     with:    %r{\.(gif|jpg|png)\Z}i,
     message: "must be a URL for GIF, JPG or PNG image."
   }
-
+  validates :title, length: {minimum: 10}
   # Check, if price is entered as a multiple of 0.05 (steps of 5 centimes)
   # def price_in_five_centimes
   #   if price and price % 0.05 != 0
@@ -29,4 +29,8 @@ class Product < ActiveRecord::Base
   # end
 
   # validate :price_in_five_centimes
+
+  def self.latest     # Iteration C5: Caching of Partial Results (p. 104)
+    Product.order(:updated_at).last
+  end
 end

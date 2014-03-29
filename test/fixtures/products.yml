@@ -4,13 +4,13 @@ one:
   title: MyString
   description: MyText
   image_url: MyString
-  price: 9.95
+  price: 9.95           # changed for UebungWaehrungsHelper (Kap. 8: Rails Controller und Functional Tests)
 
 two:
   title: MyString
   description: MyText
   image_url: MyString
-  price: 9.95
+  price: 9.95           # changed
 
 ruby: 
   title:       Programming Ruby 1.9
