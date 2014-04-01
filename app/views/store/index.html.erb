@@ -13,6 +13,7 @@
       <%= sanitize(product.description) %>
       <div class="price_line">
         <span class="price"><%= number_to_chf(product.price) %></span>	<!-- UebungWaehrungsHelper (Kap. 8: Rails Controller und Functional Tests) -->
+        <%= button_to 'Add to Cart', line_items_path(product_id: product) %> <!-- Iteration D3 --> 
       </div>
       </div>
     <% end %>

@@ -47,6 +47,8 @@ rails generate controller Store index &nbsp;&nbsp;&nbsp; // Store controller wit
 
 rake test:controllers &nbsp;&nbsp;&nbsp; // test controllers specifically
 
+rake test test/controllers/line_items_controller_test.rb
+
 &nbsp;
 
 &nbsp;
