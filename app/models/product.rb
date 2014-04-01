@@ -7,6 +7,10 @@
 # Visit http://www.pragmaticprogrammer.com/titles/rails4 for more book information.
 #---
 class Product < ActiveRecord::Base
+  has_many :line_items  # Iteration D2
+
+  before_destroy :ensure_not_referenced_by_any_line_item   # Iteration D2
+
   validates :title, :description, :image_url, presence: true
   # validates :price, numericality: {greater_than_or_equal_to: 0.01}
   validates :price, presence: true
@@ -33,4 +37,18 @@ class Product < ActiveRecord::Base
   def self.latest     # Iteration C5: Caching of Partial Results (p. 104)
     Product.order(:updated_at).last
   end
+
+
+  private  # Iteration D2
+
+    # ensure that there are no line items referencing this product
+    def ensure_not_referenced_by_any_line_item  # hook method (a method that Rails calls automatically at a given point in an object’s life)
+      if line_items.empty?
+        return true
+      else
+        errors.add(:base, 'Line Items present')
+        return false
+      end
+    end
+
 end

@@ -56,6 +56,8 @@ rake test:controllers &nbsp;&nbsp;&nbsp; // test controllers specifically
 
 rails generate scaffold Cart &nbsp;&nbsp;&nbsp; // create a shopping cart
 
+rails generate scaffold LineItem product:references cart:belongs_to &nbsp;&nbsp;&nbsp; // generate the Rails models and populate the migrations to create the corresponding tables
+
 &nbsp;
 
 &nbsp;
