@@ -52,6 +52,15 @@ rake test:controllers &nbsp;&nbsp;&nbsp; // test controllers specifically
 &nbsp;
 
 
+(Chapter 9: Task D: Cart Creation)
+
+rails generate scaffold Cart &nbsp;&nbsp;&nbsp; // create a shopping cart
+
+&nbsp;
+
+&nbsp;
+
+
 ## Minor issues
 
 * Warning: «Insecure world writable dir /usr/local in PATH, mode 040777» --> correction: sudo chmod o-w /usr/local
