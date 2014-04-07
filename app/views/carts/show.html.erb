@@ -12,6 +12,9 @@
 <h2>Your Pragmatic Cart</h2>
 <ul>    
   <% @cart.line_items.each do |item| %>
-    <li><%= item.product.title %></li>
+    <li><%= item.product.title %> &nbsp; <%= number_to_chf(item.product.price) %></li>
+  <% end %>
+  <% if @cart.line_items.count > 1 %>
+  	<li class="total">Total: &nbsp; <%= number_to_chf(@cart.get_total_price) %></li>
   <% end %>
 </ul>
