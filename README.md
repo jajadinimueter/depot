@@ -30,7 +30,7 @@ ls -p
 
 rails generate scaffold Product title:string description:text image_url:string price:decimal &nbsp;&nbsp;&nbsp; // Scaffolding
 
-rake db:migrate &nbsp;&nbsp;&nbsp; // apply database changes
+rake db:migrate &nbsp;&nbsp;&nbsp; // apply database changes (migration)
 
 rake test &nbsp;&nbsp;&nbsp; // runt tests (Unit and Controller)
 
@@ -59,6 +59,20 @@ rake test test/controllers/line_items_controller_test.rb
 rails generate scaffold Cart &nbsp;&nbsp;&nbsp; // create a shopping cart
 
 rails generate scaffold LineItem product:references cart:belongs_to &nbsp;&nbsp;&nbsp; // generate the Rails models and populate the migrations to create the corresponding tables
+
+&nbsp;
+
+(Chapter 10: Task E: A Smarter Card)
+
+rails generate migration add_quantity_to_line_items quantity:integer &nbsp;&nbsp;&nbsp; // add_XXX_to_TABLE (or: remove_XXX_from_TABLE) + name:datatype
+
+* Change: default value for the new column
+
+rails generate migration combine_items_in_cart
+
+rake db:rollback &nbsp;&nbsp;&nbsp; // rewind migration
+
+rake db:migrate:status &nbsp;&nbsp;&nbsp; // check the status of migrations
 
 &nbsp;
 

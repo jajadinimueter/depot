@@ -27,7 +27,8 @@ class LineItemsController < ApplicationController
   # POST /line_items.json
   def create
     product = Product.find(params[:product_id])             # Iteration D3
-    @line_item = @cart.line_items.build(product: product)   # before:     @line_item = LineItem.new(line_item_params)
+    # @line_item = @cart.line_items.build(product: product)   # before:     @line_item = LineItem.new(line_item_params)
+    @line_item = @cart.add_product(product.id)    # Chapter 10.1 (Iteration E1)
 
     respond_to do |format|
       if @line_item.save
