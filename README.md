@@ -121,4 +121,8 @@ Helpful links
 
 * Markdown Syntax: http://daringfireball.net/projects/markdown/syntax
 
+* Plugin repository: http://www.rubygems.org
+
+* Find the right application: www.ruby-toolbox.com
+
 
