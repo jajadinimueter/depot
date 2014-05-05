@@ -73,20 +73,20 @@ class ProductTest < ActiveSupport::TestCase
                  product.errors[:title]
   end
 
-  test "product price must be positive and a multiple unit of 0.05" do
-    product = Product.new(title:       "My Book Title",
-                          description: "yyy",
-                          image_url:   "zzz.jpg")
-    product.price = 0.9
-    assert product.invalid?
-    assert product.errors[:price].include? "must be a multiple of 0.05"   # in Java: array_contains, list_contains
+  # test "product price must a multiple unit of 0.05" do
+  #   product = Product.new(title:       "My Book Title",
+  #                         description: "yyy",
+  #                         image_url:   "zzz.jpg")
+  #   product.price = 0.9
+  #   assert product.invalid?
+  #   assert product.errors[:price].include? "product price must be a multiple unit of 0.05"   # in Java: array_contains, list_contains
     
-    # product.price = 0
-    # assert product.invalid?
-    # assert_equal ["must be greater than or equal to 0.05"],
-    #   product.errors[:price]
+  #   # product.price = 0
+  #   # assert product.invalid?
+  #   # assert_equal ["must be greater than or equal to 0.05"],
+  #   #   product.errors[:price]
 
-    # product.price = 0.95
-    # assert product.valid?
-  end
+  #   # product.price = 0.95
+  #   # assert product.valid?
+  # end
 end

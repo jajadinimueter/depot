@@ -74,6 +74,8 @@ rake db:rollback &nbsp;&nbsp;&nbsp; // rewind migration
 
 rake db:migrate:status &nbsp;&nbsp;&nbsp; // check the status of migrations
 
+rake log:clear LOGS=test &nbsp;&nbsp;&nbsp; // clear the test logs
+
 &nbsp;
 
 &nbsp;
