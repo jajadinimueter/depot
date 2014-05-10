@@ -18,9 +18,24 @@ Ruby on Rails
 Getting started
 ===============
 
+* Versions of Rails installed: gem list --local rails
+* Default version: rails --version
+* Application's environment: rake about
+
+&nbsp;
+
+* Rails documentation: http://api.rubyonrails.org/
+
+* Rails console: rails console &nbsp;&nbsp;&nbsp;or: rails c
+
+&nbsp;
 
 * Test data: db/seeds.rb
 
+* Server: rails s &nbsp;&nbsp;&nbsp; or: rails server (webrick)
+* Browser URL: http://localhost:3000
+
+&nbsp;
 
 rails new depot &nbsp;&nbsp;&nbsp; // create new rails application
 
@@ -76,6 +91,16 @@ rake db:migrate:status &nbsp;&nbsp;&nbsp; // check the status of migrations
 
 rake log:clear LOGS=test &nbsp;&nbsp;&nbsp; // clear the test logs
 
+
+&nbsp;
+
+#### Error logging:
+
+def invalid_cart
+&nbsp;&nbsp; logger.error "Attempt to access invalid cart #{params[:id]}"
+&nbsp;&nbsp; redirect_to store_url, notice: 'Invalid cart'
+end
+
 &nbsp;
 
 &nbsp;
@@ -101,6 +126,19 @@ psql postgres &nbsp;&nbsp;&nbsp; // to start PostgreSQL console
 
 
 &nbsp;
+
+
+
+Gem documentation
+=================
+
+* Start the gem documentation server: gem server
+
+* Access: http://localhost:8808
+
+
+&nbsp;
+
 
 
 
@@ -140,5 +178,7 @@ Helpful links
 * Plugin repository: http://www.rubygems.org
 
 * Find the right application: www.ruby-toolbox.com
+
+* Regular ruby expressions: www.rubular.com
 
 

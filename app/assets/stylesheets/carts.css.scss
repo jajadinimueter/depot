@@ -2,6 +2,20 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-.total {
+.carts {
+  .table_line, .total_line {
+    text-align: right;
+  }
+  .item_title {
+    text-align: left;
+  }
+
+  .total_line, .total_cell {
     font-weight: bold;
+    border-top: 1px solid #595;
+  }
 }
+
+//.total {
+//    font-weight: bold;
+//}

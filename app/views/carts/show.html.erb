@@ -9,32 +9,32 @@
 <p id="notice"><%= notice %></p>
 <% end %>
 
-<h2>Your Pragmatic Cart</h2>
+<h2>Your Cart</h2>      <!-- Iteration E3 (Chapter 10.3, p. 131) -->
 
 <table style="border:0; width:70%;">
-    <tr>
-        <th style="text-align: left;">Product</th>
-        <th style="text-align: right;">Price</th>
-        <th style="text-align: right;">Quantity</th>
-        <th style="text-align: right;">Subtotal<th>
+    <tr class="table_line">
+        <th class="item_title">Product</th>
+        <th>Price</th>
+        <th>Quantity</th>
+        <th>Subtotal<th>
     </tr>
     <% @cart.line_items.each do |item| %>
-    <tr>
-        <td style="text-align: left;"><%= item.product.title %></td>
-        <td style="text-align: right;"><%= number_to_chf(item.product.price)%></td>
-        <td style="text-align: right;">&times; <%= item.quantity %></td>
-        <td style="text-align: right;"><%= number_to_chf(item.product.price * item.quantity) %></td>
+    <tr class="table_line">
+        <td class="item_title"><%= item.product.title %></td>
+        <td><%= number_to_chf(item.product.price)%></td>
+        <td>&times; <%= item.quantity %></td>
+        <td><%= number_to_chf(item.total_price) %></td>
     </tr>
     <% end %>
     <tr></tr>
-    <tr>
-        <th></th>
-        <th></th>
-        <th style="text-align: right;">Total</th>
-        <th style="text-align: right;"><%= number_to_chf(@cart.get_total_price) %></th>
+    <tr class="total_line">
+        <td colspan="3">Total</td>
+        <td class="total_cell"><%= number_to_chf(@cart.total_price) %></td>
     </tr>
 </table>
 
+<%= button_to 'Empty cart', @cart, method: :delete,
+    data: { confirm: 'Are you sure?' } %>
 
 
 
