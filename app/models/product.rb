@@ -17,7 +17,7 @@ class Product < ActiveRecord::Base
   validates :price, numericality: {greater_than_or_equal_to: 0.05}
   validates :price, format: {
     with: /\A\d{1,6}(\.\d{1}5?)?\z/,
-    message: "must be a multiple of 0.05"
+    message: "must be a multiple unit of 0.05"
   } # not necessary to convert: :price.to_s
   validates :title, uniqueness: true
   validates :image_url, allow_blank: true, format: {
@@ -34,6 +34,13 @@ class Product < ActiveRecord::Base
 
   # validate :price_in_five_centimes
 
+  def price_in_five_centimes
+    if price and price % 0.05 != 0.0
+      errors.add(:price, "Price must be in 0.05 steps.")
+    end
+  end 
+  validate :price_in_five_centimes
+  
   def self.latest     # Iteration C5: Caching of Partial Results (p. 104)
     Product.order(:updated_at).last
   end

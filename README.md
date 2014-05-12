@@ -20,7 +20,7 @@ Getting started
 
 * Versions of Rails installed: gem list --local rails
 * Default version: rails --version
-* Application's environment: rake about
+* Application's environment (in project folder): rake about &nbsp;&nbsp;&nbsp; or: bundle exec rake about
 
 &nbsp;
 
@@ -32,10 +32,12 @@ Getting started
 
 * Test data: db/seeds.rb
 
-* Server: rails s &nbsp;&nbsp;&nbsp; or: rails server (webrick)
+* Server (in project folder): rails s &nbsp;&nbsp;&nbsp; or: rails server (webrick)
 * Browser URL: http://localhost:3000
 
 &nbsp;
+
+gem install rails --version 4.0.1	// generate project environment
 
 rails new depot &nbsp;&nbsp;&nbsp; // create new rails application
 
@@ -139,7 +141,7 @@ Gem documentation
 
 &nbsp;
 
-
+	
 
 
 Deployment on heroku.com
