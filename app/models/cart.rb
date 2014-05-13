@@ -1,5 +1,5 @@
 class Cart < ActiveRecord::Base
-	has_many :line_items, dependent: :destroy
+	has_many :line_items, dependent: :destroy    # Iteration D2 (Chapter 9.2, p. 109)
 
 	def get_total_price				# Übung ShoppingCartErweitern (Kap. 9)
         price = 0

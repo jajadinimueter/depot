@@ -3,6 +3,7 @@ Ruby on Rails
 
 * Local: http://localhost:3000
 * My app on heroku: http://blooming-savannah-7464.herokuapp.com
+* Curriculum: http://edu.panter.ch/WebProgrammierung2014
 
 
 &nbsp;
@@ -177,7 +178,7 @@ Helpful links
 
 * Markdown Syntax: http://daringfireball.net/projects/markdown/syntax
 
-* Plugin repository: http://www.rubygems.org
+* Plugin repository: http://www.rubygems.org &nbsp;&nbsp;&nbsp; http://agilewebdevelopment.com
 
 * Find the right application: www.ruby-toolbox.com
 
