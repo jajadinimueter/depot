@@ -9,43 +9,4 @@
 <p id="notice"><%= notice %></p>
 <% end %>
 
-<h2>Your Cart</h2>      <!-- Iteration E3 (Chapter 10.3, p. 131) -->
-
-<table style="border:0; width:70%;">
-    <tr class="table_line">
-        <th class="item_title">Product</th>
-        <th>Price</th>
-        <th>Quantity</th>
-        <th>Subtotal<th>
-    </tr>
-    <% @cart.line_items.each do |item| %>
-    <tr class="table_line">
-        <td class="item_title"><%= item.product.title %></td>
-        <td><%= number_to_chf(item.product.price)%></td>
-        <td>&times; <%= item.quantity %></td>
-        <td><%= number_to_chf(item.total_price) %></td>
-    </tr>
-    <% end %>
-    <tr></tr>
-    <tr class="total_line">
-        <td colspan="3">Total</td>
-        <td class="total_cell"><%= number_to_chf(@cart.total_price) %></td>
-    </tr>
-</table>
-
-<%= button_to 'Empty cart', @cart, method: :delete,
-    data: { confirm: 'Are you sure?' } %>
-
-
-
-<!-- Old version
-<ul>    
-  <% @cart.line_items.each do |item| %>
-    <!-- <li><%= item.product.title %> &nbsp; <%= number_to_chf(item.product.price) %></li> # Iteration E1 ->
-    <li><%= item.quantity %> &times; &nbsp; <%= item.product.title %> <%= number_to_chf(item.product.price * item.quantity) %></li>
-  <% end %>
-  <% if @cart.line_items.count > 1 %>
-  	<li class="total">Total: &nbsp; <%= number_to_chf(@cart.get_total_price) %></li>
-  <% end %>
-</ul>
--->
+<%= render @cart %>

@@ -185,3 +185,20 @@ Helpful links
 * Regular ruby expressions: www.rubular.com
 
 
+
+
+
+
+Active::Record	:ActiveRecord
+dependent => destroy = dependent: destroy
+
+
+
+
+
+Fangfragen!
+Genau lesen!
+
+Ausprobieren in rails console
+
+

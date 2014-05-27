@@ -2,15 +2,15 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-.carts {
-  .table_line, .total_line {
+.carts, #side #cart {             // before: .carts {       // Iteration F1, Chapter 11.1 (p. 140)
+  .item_price, .total_line {      // .table_line,
     text-align: right;
   }
-  .item_title {
+  /*.item_title {
     text-align: left;
-  }
+  } */
 
-  .total_line, .total_cell {
+  .total_cell {                   // .total_line, 
     font-weight: bold;
     border-top: 1px solid #595;
   }
