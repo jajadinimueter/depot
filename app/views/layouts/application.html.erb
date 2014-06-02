@@ -20,11 +20,11 @@
   <div id="columns">
     <div id="side">
       <!-- <div id="cart">           <!-- Iteration F1, Chapter 11.1, p. 139 -->
-        <!-- <%= render @cart %>
-      </div> -->
       <!-- START:hidden_div -->
-      <%= hidden_div_if(@cart.line_items.empty?, id: 'cart') do %>   <!-- Iteration F4, Chapter 11.4, p. 151 -->
-        <%= render @cart %>
+      <% if @cart %>      <!-- Iteration F6 (Chapter 11.6, p. 155) -->
+        <%= hidden_div_if(@cart.line_items.empty?, id: 'cart') do %>   <!-- Iteration F4, Chapter 11.4, p. 151 -->
+          <%= render @cart %>
+        <% end %>
       <% end %>
       <!-- END:hidden_div -->
 
