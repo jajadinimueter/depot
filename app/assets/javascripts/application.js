@@ -14,5 +14,4 @@
 // Iteration F3 (Chapter 11.3, p. 147), following line
 //= require jquery.ui.effect-blind
 //= require jquery_ujs
-//= require turbolinks
 //= require_tree .
