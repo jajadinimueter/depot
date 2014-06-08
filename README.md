@@ -1,3 +1,8 @@
+<a href='https://travis-ci.org/arktokrates/depot-r?branch=master'><img src='https://travis-ci.org/arktokrates/depot-r.png?branch=master' alt='Build Status'/></a>
+<a href='https://coveralls.io/r/arktokrates/depot-r'><img src='https://coveralls.io/repos/arktokrates/depot-r/badge.png' alt='Coverage Status' /></a>
+
+
+
 Ruby on Rails
 =============
 
@@ -164,6 +169,20 @@ heroku run rake db:seed &nbsp;&nbsp;&nbsp; // load data on Heroku
 
 git ps heroku master &nbsp;&nbsp;&nbsp; // push local branch into remote branch on Heroku (remote + branch)
 
+&nbsp;
+
+
+## Travis
+
+* http://docs.travis-ci.com/user/languages/ruby/
+* http://docs.travis-ci.com/user/deployment/heroku/
+
+&nbsp;
+
+
+## Coveralls.io
+
+* https://coveralls.io/docs
 
 
 &nbsp;
@@ -184,22 +203,4 @@ Helpful links
 * Find the right application: www.ruby-toolbox.com
 
 * Regular ruby expressions: www.rubular.com
-
-
-
-
-
-
-Active::Record	:ActiveRecord
-dependent => destroy = dependent: destroy
-
-
-
-
-
-Fangfragen!
-Genau lesen!
-
-Ausprobieren in rails console
-
 
