@@ -2,7 +2,8 @@ Ruby on Rails
 =============
 
 * Local: http://localhost:3000
-* My app on heroku: http://blooming-savannah-7464.herokuapp.com
+* GitHub repository: http://github.com/arktokrates/depot-r
+* My app on heroku: http://depot-r.herokuapp.com
 * Curriculum: http://edu.panter.ch/WebProgrammierung2014
 
 

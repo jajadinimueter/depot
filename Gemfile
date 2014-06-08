@@ -45,6 +45,9 @@ gem 'rails_12factor', group: :production
 
 # ruby '2.0.0'
 
+# Coveralls.io
+gem 'coveralls', require: false
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.1.2'
 
