@@ -41,8 +41,8 @@ de-ch:
       format:
         unit:      "CHF"
         precision: 2
-        separator: "'"
-        delimiter: ","
+        separator: "."
+        delimiter: "'"
         format:    "%u&nbsp;%n"
 #END:currency
 

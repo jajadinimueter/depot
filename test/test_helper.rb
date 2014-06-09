@@ -18,3 +18,10 @@ class ActiveSupport::TestCase
 
   # Add more helper methods to be used by all tests here...
 end
+
+# Helper currency_to_locale added
+# require 'rubygems'
+# require 'action_view'
+# require 'action_view/helpers'
+require './app/helpers/application_helper'
+include ApplicationHelper
