@@ -1,4 +1,5 @@
 <a href='https://travis-ci.org/arktokrates/depot-r?branch=master'><img src='https://travis-ci.org/arktokrates/depot-r.png?branch=master' alt='Build Status'/></a>
+<a href="https://codeclimate.com/github/arktokrates/depot-r"><img src="https://codeclimate.com/github/arktokrates/depot-r.png" alt='Code Quality'/></a>
 <a href='https://coveralls.io/r/arktokrates/depot-r'><img src='https://coveralls.io/repos/arktokrates/depot-r/badge.png' alt='Coverage Status' /></a>
 
 
@@ -11,6 +12,7 @@ Ruby on Rails
 * GitHub repository: http://github.com/arktokrates/depot-r
 * My app on heroku: http://depot-r.herokuapp.com
 * CI with Travis: https://travis-ci.org/arktokrates/depot-r
+* Code Review: https://codeclimate.com/github/arktokrates/depot-r
 * Test Coverage: https://coveralls.io/r/arktokrates/depot-r
 * Curriculum: http://edu.panter.ch/WebProgrammierung2014
 
