@@ -123,7 +123,7 @@
       "/Users/bernhardfuchs/ruby/depot-r/app/helpers/application_helper.rb": [
         1,
         1,
-        19,
+        0,
         null,
         null,
         1,
@@ -243,9 +243,28 @@
       ],
       "/Users/bernhardfuchs/ruby/depot-r/app/controllers/application_controller.rb": [
         1,
+        1,
         null,
         null,
         1,
+        null,
+        1,
+        null,
+        1,
+        32,
+        0,
+        0,
+        null,
+        0,
+        null,
+        0,
+        null,
+        null,
+        null,
+        null,
+        1,
+        64,
+        null,
         null
       ],
       "/Users/bernhardfuchs/ruby/depot-r/app/controllers/line_items_controller.rb": [
@@ -533,6 +552,6 @@
         null
       ]
     },
-    "timestamp": 1402304132
+    "timestamp": 1402310020
   }
 }

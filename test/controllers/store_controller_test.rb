@@ -7,7 +7,8 @@ class StoreControllerTest < ActionController::TestCase
     assert_select '#columns #side a', minimum: 4
     assert_select '#main .entry', 3
     assert_select 'h3', 'Programming Ruby 1.9'
-    assert_select '.price', /CHF [,\d]+\.\d\d/   # UebungWaehrungsHelper (Kap. 8: Rails Controller und Functional Tests)
+    assert_select '.price', /\$[,\d]+\.\d\d/
+    # assert_select '.price', /CHF [,\d]+\.\d\d/   # UebungWaehrungsHelper (Kap. 8: Rails Controller und Functional Tests)
   end
 
   test "markup needed for store.js.coffee is in place" do
