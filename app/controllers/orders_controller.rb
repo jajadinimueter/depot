@@ -39,8 +39,8 @@ class OrdersController < ApplicationController
         Cart.destroy(session[:cart_id])
         session[:cart_id] = nil
     
-        format.html { redirect_to store_url, notice: 'Thank you for your order.' }    # Iteration G1 (Chapter 12.1, p. 168)
-
+        # format.html { redirect_to store_url, notice: 'Thank you for your order.' }    # Iteration G1 (Chapter 12.1, p. 168)
+        format.html { redirect_to store_url, notice: I18n.t('.thanks') }    # Iteration J3 (Chapter 15.3, p. 227f.)
         # format.html { redirect_to @order, notice: 'Order was successfully created.' }
         format.json { render action: 'show', status: :created, location: @order }
       else
