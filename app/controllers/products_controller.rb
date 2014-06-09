@@ -61,6 +61,16 @@ class ProductsController < ApplicationController
     end
   end
 
+  def who_bought      # Iteration G2 (Chapter 12.2, p. 172)
+    @product = Product.find(params[:id])
+    @latest_order = @product.orders.order(:updated_at).last
+    if stale?(@latest_order)
+      respond_to do |format|
+        format.atom
+      end
+    end
+  end
+
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_product

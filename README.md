@@ -3,12 +3,15 @@
 
 
 
+
 Ruby on Rails
 =============
 
 * Local: http://localhost:3000
 * GitHub repository: http://github.com/arktokrates/depot-r
 * My app on heroku: http://depot-r.herokuapp.com
+* CI with Travis: https://travis-ci.org/arktokrates/depot-r
+* Test Coverage: https://coveralls.io/r/arktokrates/depot-r
 * Curriculum: http://edu.panter.ch/WebProgrammierung2014
 
 
@@ -184,11 +187,18 @@ git ps heroku master &nbsp;&nbsp;&nbsp; // push local branch into remote branch 
 
 * https://coveralls.io/docs
 
+&nbsp;
 
 &nbsp;
 
 
 
+Atom Feeds
+==========
+
+* Test in console: curl --silent http://localhost:3000/products/2/who_bought.atom
+
+&nbsp;
 
 &nbsp;
 

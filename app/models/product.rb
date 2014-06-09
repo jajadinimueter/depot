@@ -8,6 +8,7 @@
 #---
 class Product < ActiveRecord::Base
   has_many :line_items  # Iteration D2
+  has_many :orders, through: :line_items  # Iteration G2 (Chapter 12.2, p. 174)
 
   before_destroy :ensure_not_referenced_by_any_line_item   # Iteration D2
 
