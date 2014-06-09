@@ -29,7 +29,7 @@
 #START:currency
 #START:checkout
 #START:flash
-en:
+de-ch:
 
 #END:cart
 #END:checkout
@@ -39,60 +39,60 @@ en:
   number:
     currency:
       format:
-        unit:      "$"
+        unit:      "CHF"
         precision: 2
-        separator: "."
+        separator: "'"
         delimiter: ","
-        format:    "%u%n"
+        format:    "%u&nbsp;%n"
 #END:currency
 
 #START:errors
   errors:
     template:
-      body:        "There were problems with the following fields:"
+      body:        "Bei den folgenden Feldern gab es Probleme:"
       header:       
-        one:       "1 error prohibited this %{model} from being saved"
-        other:     "%{count} errors prohibited this %{model} from being saved"
+        one:       "1 Fehler verhinderte, dass dieses %{model} gespeichert wurde."
+        other:     "%{count} verhinderten, dass dieses %{model} gespeichert wurde."
 #END:errors
 
 #START:layout
   layouts:
     application:
-      title:       "Pragmatic Bookshelf"
+      title:       "Pragmatischer Buchladen"
       home:        "Home"
-      questions:   "Questions"
+      questions:   "Fragen"
       news:        "News"
-      contact:     "Contact"
+      contact:     "Kontakt"
 #END:layout
 
 #START:cart
   carts:
     cart:
-      title:       "Your Cart"
-      empty:       "Empty cart"
-      checkout:    "Checkout"
+      title:       "Ihr Warenkorb"
+      empty:       "Warenkorb leeren"
+      checkout:    "Bezahlen"
 #END:cart
 
 #START:main
   store:
     index:
-      title_html:  "Your Pragmatic Catalog"
-      add_html:    "Add to Cart"
+      title_html:  "Ihr Pragmatischer Katalog"
+      add_html:    "Zum Warenkorb hinzufügen"
 #END:main
 
 #START:checkout
   orders:
     new:
-      legend:       "Please Enter Your Details"
+      legend:       "Bitte geben Sie Ihre Daten an."
     form:
       name:         "Name"
-      address_html: "Address"
+      address_html: "Adresse"
       email:        "E-mail"
-      pay_type:     "Pay with"
-      pay_prompt_html: "Select a payment method"
-      submit:       "Place Order"
+      pay_type:     "Zahlungsmethode"
+      pay_prompt_html: "Bitte wählen Sie eine Zahlungsmethode"
+      submit:       "Bestellen"
 #END:checkout
 
 #START:flash
-  thanks:          "Thank you for your order"
+  thanks:          "Danke für Ihre Bestellung!"
 #END:flash

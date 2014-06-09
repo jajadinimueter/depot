@@ -15,7 +15,8 @@
 <!-- START_HIGHLIGHT -->
   <div id="banner">
     <%= image_tag("logo.png") %>
-    <%= @page_title || "Pragmatic Bookshelf" %><!-- <label id="code.depot.e.title"/> -->
+    <%= @page_title || t('.title') %>   <!-- Iteration J2 (Chapter 15.2, p. 216f.) -->
+    <!--<%= @page_title || "Pragmatic Bookshelf" %> -->   <!-- <label id="code.depot.e.title"/> -->
   </div>
   <div id="columns">
     <div id="side">
@@ -29,10 +30,10 @@
       <!-- END:hidden_div -->
 
       <ul>
-        <li><a href="/">Home</a></li>
-        <li><a href="/">Questions</a></li>   <!-- http://www..../faq -->
-        <li><a href="/">News</a></li>   <!-- http://www..../news -->
-        <li><a href="/">Contact</a></li>   <!-- http://www..../news -->
+        <li><a href="/"><%= t('.home') %></a></li>        <!-- <li><a href="/">Home</a></li> Iteration J2 (Chapter 15.2, p. 216f.) -->
+        <li><a href="/"><%= t('.questions') %></a></li>   <!-- http://www..../faq -->
+        <li><a href="/"><%= t('.news') %></a></li>   <!-- http://www..../news -->
+        <li><a href="/"><%= t('.contact') %></a></li>   <!-- http://www..../news -->
       </ul>
     </div>
     <div id="main">
