@@ -91,6 +91,10 @@ de-ch:
       pay_type:     "Zahlungsmethode"
       pay_prompt_html: "Bitte wählen Sie eine Zahlungsmethode"
       submit:       "Bestellen"
+    payment_types:
+      check: "Check" 
+      credit_card: "Kreditkarte" 
+      purchase_order: "Rechnung"
 #END:checkout
 
 #START:flash

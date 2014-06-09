@@ -1,6 +1,6 @@
-<a href='https://travis-ci.org/arktokrates/depot-r?branch=master'><img src='https://travis-ci.org/arktokrates/depot-r.png?branch=master' alt='Build Status'/></a> &nbsp;&nbsp;
-<a href="https://codeclimate.com/github/arktokrates/depot-r"><img src="https://codeclimate.com/github/arktokrates/depot-r.png" alt='Code Quality'/></a> &nbsp;&nbsp;
-<a href='https://coveralls.io/r/arktokrates/depot-r'><img src='https://coveralls.io/repos/arktokrates/depot-r/badge.png' alt='Coverage Status' /></a>
+<a href='https://travis-ci.org/arktokrates/digibooks?branch=master'><img src='https://travis-ci.org/arktokrates/digibooks.png?branch=master' alt='Build Status'/></a> &nbsp;&nbsp;
+<a href="https://codeclimate.com/github/arktokrates/digibooks"><img src="https://codeclimate.com/github/arktokrates/digibooks.png" alt='Code Quality'/></a> &nbsp;&nbsp;
+<a href='https://coveralls.io/r/arktokrates/digibooks'><img src='https://coveralls.io/repos/arktokrates/digibooks/badge.png' alt='Coverage Status' /></a>
 
 
 
@@ -9,11 +9,11 @@ Ruby on Rails
 =============
 
 * Local: http://localhost:3000
-* GitHub repository: http://github.com/arktokrates/depot-r
-* My app on heroku: http://depot-r.herokuapp.com
-* CI with Travis: https://travis-ci.org/arktokrates/depot-r
-* Code Review: https://codeclimate.com/github/arktokrates/depot-r
-* Test Coverage: https://coveralls.io/r/arktokrates/depot-r
+* GitHub repository: http://github.com/arktokrates/digibooks
+* My app on heroku: http://digibooks.herokuapp.com
+* CI with Travis: https://travis-ci.org/arktokrates/digibooks
+* Code Review: https://codeclimate.com/github/arktokrates/digibooks
+* Test Coverage: https://coveralls.io/r/arktokrates/digibooks
 * Curriculum: http://edu.panter.ch/WebProgrammierung2014
 
 
@@ -180,6 +180,8 @@ heroku run rake db:migrate &nbsp;&nbsp;&nbsp; // perform database migrations als
 heroku run rake db:seed &nbsp;&nbsp;&nbsp; // load data on Heroku
 
 git ps heroku master &nbsp;&nbsp;&nbsp; // push local branch into remote branch on Heroku (remote + branch)
+
+heroku apps:rename depot-r --app blooming-savannah-7464
 
 &nbsp;
 
