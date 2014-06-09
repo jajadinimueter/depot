@@ -14,13 +14,20 @@
 <body class='<%= controller.controller_name %>'>  <!-- Iteration A2 (page 71) -->
 <!-- START_HIGHLIGHT -->
   <div id="banner">
+    <%= form_tag store_path, class: 'locale' do %>  <!-- Iteration J4 (Chapter 15.4, p. 229) -->
+      <%= select_tag 'set_locale', 
+        options_for_select(LANGUAGES, I18n.locale.to_s),
+        onchange: 'this.form.submit()' %>
+      <%= submit_tag 'submit' %>
+      <%= javascript_tag "$('.locale input').hide()" %>
+    <% end %>
     <%= image_tag("logo.png") %>
     <%= @page_title || t('.title') %>   <!-- Iteration J2 (Chapter 15.2, p. 216f.) -->
     <!--<%= @page_title || "Pragmatic Bookshelf" %> -->   <!-- <label id="code.depot.e.title"/> -->
   </div>
   <div id="columns">
     <div id="side">
-      <!-- <div id="cart">           <!-- Iteration F1, Chapter 11.1, p. 139 -->
+      <!-- <div id="cart">           <!-- Iteration F1 (Chapter 11.1, p. 139) -->
       <!-- START:hidden_div -->
       <% if @cart %>      <!-- Iteration F6 (Chapter 11.6, p. 155) -->
         <%= hidden_div_if(@cart.line_items.empty?, id: 'cart') do %>   <!-- Iteration F4, Chapter 11.4, p. 151 -->
