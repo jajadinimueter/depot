@@ -58,7 +58,7 @@ de-ch:
 #START:layout
   layouts:
     application:
-      title:       "Pragmatischer Buchladen"
+      title:       "Digitale Bücher"
       home:        "Home"
       questions:   "Fragen"
       news:        "News"
@@ -76,7 +76,7 @@ de-ch:
 #START:main
   store:
     index:
-      title_html:  "Ihr Pragmatischer Katalog"
+      title_html:  "Ihr Katalog digitaler Bücher"
       add_html:    "Zum Warenkorb hinzufügen"
 #END:main
 
@@ -89,7 +89,7 @@ de-ch:
       address_html: "Adresse"
       email:        "E-mail"
       pay_type:     "Zahlungsmethode"
-      pay_prompt_html: "Bitte wählen Sie eine Zahlungsmethode"
+      pay_prompt_html: "Bitte wählen Sie eine Zahlungsmethode."
       submit:       "Bestellen"
     payment_types:
       check: "Check" 

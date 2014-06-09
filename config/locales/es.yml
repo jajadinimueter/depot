@@ -33,20 +33,20 @@ es:
 #START:errors
     errors:
       messages:
-        inclusion: "no est&aacute; incluido en la lista"
-        blank:     "no puede quedar en blanco"
+        inclusion: "No est&aacute; incluido en la lista."
+        blank:     "No puede quedar en blanco."
   errors:
     template:
       body:        "Hay problemas con los siguientes campos:"
       header:
-        one:       "1 error ha impedido que este %{model} se guarde"
-        other:     "%{count} errores han impedido que este %{model} se guarde"
+        one:       "1 error ha impedido que este %{model} se guarde."
+        other:     "%{count} errores han impedido que este %{model} se guarde."
 #END:errors
 
 #START:layout
   layouts:
     application:
-      title:       "Publicaciones de Pragmatic"
+      title:       "Libros digitales"
       home:        "Inicio"
       questions:   "Preguntas"
       news:        "Noticias"
@@ -64,14 +64,14 @@ es:
 #START:main
   store:
     index:
-      title_html:  "Su Cat&aacute;logo de Pragmatic"
+      title_html:  "Su Cat&aacute;logo de libros digitales"
       add_html:    "A&ntilde;adir al Carrito"
 #END:main
 
 #START:checkout
   orders:
     new:
-      legend:       "Por favor, introduzca sus datos"
+      legend:       "Por favor, introduzca sus datos."
     form:
       name:         "Nombre"
       address_html: "Direcci&oacute;n"
@@ -87,5 +87,5 @@ es:
 #END:checkout
 
 #START:flash
-  thanks:          "Gracias por su pedido"
+  thanks:          "Gracias por su pedido!"
 #END:flash

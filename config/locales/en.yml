@@ -51,14 +51,14 @@ en:
     template:
       body:        "There were problems with the following fields:"
       header:       
-        one:       "1 error prohibited this %{model} from being saved"
-        other:     "%{count} errors prohibited this %{model} from being saved"
+        one:       "1 error prohibited this %{model} from being saved."
+        other:     "%{count} errors prohibited this %{model} from being saved."
 #END:errors
 
 #START:layout
   layouts:
     application:
-      title:       "Pragmatic Bookshelf"
+      title:       "Digital Books"
       home:        "Home"
       questions:   "Questions"
       news:        "News"
@@ -76,7 +76,7 @@ en:
 #START:main
   store:
     index:
-      title_html:  "Your Pragmatic Catalog"
+      title_html:  "Your Digital Books Catalog"
       add_html:    "Add to Cart"
 #END:main
 
@@ -98,5 +98,5 @@ en:
 #END:checkout
 
 #START:flash
-  thanks:          "Thank you for your order"
+  thanks:          "Thank you for your order!"
 #END:flash
