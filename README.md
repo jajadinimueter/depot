@@ -1,5 +1,5 @@
-<a href='https://travis-ci.org/arktokrates/depot-r?branch=master'><img src='https://travis-ci.org/arktokrates/depot-r.png?branch=master' alt='Build Status'/></a>
-<a href="https://codeclimate.com/github/arktokrates/depot-r"><img src="https://codeclimate.com/github/arktokrates/depot-r.png" alt='Code Quality'/></a>
+<a href='https://travis-ci.org/arktokrates/depot-r?branch=master'><img src='https://travis-ci.org/arktokrates/depot-r.png?branch=master' alt='Build Status'/></a> &nbsp;&nbsp;
+<a href="https://codeclimate.com/github/arktokrates/depot-r"><img src="https://codeclimate.com/github/arktokrates/depot-r.png" alt='Code Quality'/></a> &nbsp;&nbsp;
 <a href='https://coveralls.io/r/arktokrates/depot-r'><img src='https://coveralls.io/repos/arktokrates/depot-r/badge.png' alt='Coverage Status' /></a>
 
 
@@ -116,6 +116,13 @@ def invalid_cart
 end
 
 &nbsp;
+
+&nbsp;
+
+
+## Routes
+
+* Information on all routes: http://localhost:3000/rails/info/routes
 
 &nbsp;
 

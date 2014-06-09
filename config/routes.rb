@@ -10,12 +10,19 @@ Depot::Application.routes.draw do
     get :who_bought, on: :member
   end
 
+  scope '(:locale)' do      # Iteration J1 (Chapter 15.1, p. 212f.)
+    resources :orders
+    resources :line_items
+    resources :carts
+    root 'store#index', as: 'store', via: :all
+  end
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
   # root 'products#index'
-  root 'store#index', as: 'store'
+  # root 'store#index', as: 'store'   # commented out in Iteration J1 (Chapter 15.1, p. 213)
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
