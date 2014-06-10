@@ -17,20 +17,20 @@
 development:
   adapter: postgresql
   encoding: utf8
-  database: digibooks_development
+  database: depot_development
   pool: 5
   password:
 
 test:
   adapter: postgresql
   encoding: utf8
-  database: digibooks_test
+  database: depot_test
   pool: 5
   password:
 
 production:
   adapter: postgresql
   encoding: utf8
-  database: digibooks_production
+  database: depot_production
   pool: 5
   password:
