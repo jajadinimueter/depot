@@ -16,4 +16,10 @@ class StoreControllerTest < ActionController::TestCase
     assert_select '.store .entry > img', 3
     assert_select '.entry input[type=submit]', 3
   end
+
+  test "should get English index" do
+    get :index, locale: "en"
+    assert_response :success
+  end
+
 end
