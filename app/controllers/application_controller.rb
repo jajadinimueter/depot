@@ -1,10 +1,10 @@
 class ApplicationController < ActionController::Base
-  before_action :set_i18n_locale_from_params		# Iteration J1 (Chapter 15.1, p. 214)
+  before_action :set_i18n_locale_from_params		
   # Prevent CSRF attacks by raising an exception.
   # For APIs, you may want to use :null_session instead.
   protect_from_forgery with: :exception
 
-  protected		# Iteration J1 (Chapter 15.1, p. 214)
+  protected		
 
     def set_i18n_locale_from_params
       if params[:locale]

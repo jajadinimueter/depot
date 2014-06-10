@@ -19,12 +19,12 @@ class LineItemsControllerTest < ActionController::TestCase
   test "should create line_item" do
     assert_difference('LineItem.count') do
       # post :create, line_item: { cart_id: @line_item.cart_id, product_id: @line_item.product_id }
-      post :create, product_id: products(:ruby).id   # Iteration D3
+      post :create, product_id: products(:ruby).id   
     end
 
     # assert_redirected_to line_item_path(assigns(:line_item))
-    # assert_redirected_to cart_path(assigns(:line_item).cart)    # Iteration D3
-    assert_redirected_to store_path   # Iteration F6 (Chapter 11.6, p. 155)
+    # assert_redirected_to cart_path(assigns(:line_item).cart)    
+    assert_redirected_to store_path   
   end
 
   test "should show line_item" do
@@ -39,7 +39,7 @@ class LineItemsControllerTest < ActionController::TestCase
 
   test "should update line_item" do
     # patch :update, id: @line_item, line_item: { cart_id: @line_item.cart_id, product_id: @line_item.product_id }
-    patch :update, id: @line_item, line_item: { product_id: @line_item.product_id }   # Iteration E2 (Chapter 10.2)
+    patch :update, id: @line_item, line_item: { product_id: @line_item.product_id }   
     assert_redirected_to line_item_path(assigns(:line_item))
   end
 
@@ -51,7 +51,7 @@ class LineItemsControllerTest < ActionController::TestCase
     assert_redirected_to line_items_path
   end
 
-  test "should create line_item via ajax" do    # Iteration F6 (Chapter 11.6, p. 156)
+  test "should create line_item via ajax" do    
     assert_difference('LineItem.count') do
       xhr :post, :create, product_id: products(:ruby).id
     end 

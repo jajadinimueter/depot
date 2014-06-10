@@ -10,7 +10,7 @@ module ApplicationHelper		# UebungWaehrungsHelper (Kap. 8: Rails Controller und 
     number_to_currency price
   end
 
- def hidden_div_if(condition, attributes = {}, &block)		# Iteration F4 (Chapter 11.4, p. 151)
+ def hidden_div_if(condition, attributes = {}, &block)		
     if condition
       attributes["style"] = "display: none"
     end

@@ -2,7 +2,7 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-.carts, #side #cart {             // before: .carts {       // Iteration F1, Chapter 11.1 (p. 140)
+.carts, #side #cart {             // before: .carts {       
   .item_price, .total_line {      // .table_line,
     text-align: right;
   }

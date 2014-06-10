@@ -6,11 +6,11 @@ Depot::Application.routes.draw do
   resources :carts
 
   get "store/index"
-  resources :products do    # Iteration G2 (Chapter 12.2, p. 175)
+  resources :products do    
     get :who_bought, on: :member
   end
 
-  scope '(:locale)' do      # Iteration J1 (Chapter 15.1, p. 212f.)
+  scope '(:locale)' do      
     resources :orders
     resources :line_items
     resources :carts

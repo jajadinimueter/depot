@@ -1,20 +1,16 @@
-<!-- START:head -->
 <!DOCTYPE html>
 <html>
 <head>
-<!-- START_HIGHLIGHT -->
   <title>Curiousities</title>
-<!-- END_HIGHLIGHT -->
-  <!-- <label id="code.slt"/> --><%= stylesheet_link_tag    "application", media: "all",
+  <%= stylesheet_link_tag    "application", media: "all",
     "data-turbolinks-track" => true %>
-  <%= javascript_include_tag "application", "data-turbolinks-track" => true %><!-- <label id="code.jlt"/> -->
-  <%= csrf_meta_tags %><!-- <label id="code.csrf"/> -->
+  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+  <%= csrf_meta_tags %>
 </head>
-<!-- END:head -->
-<body class='<%= controller.controller_name %>'>  <!-- Iteration A2 (page 71) -->
+<body class='<%= controller.controller_name %>'>  
 <!-- START_HIGHLIGHT -->
   <div id="banner">
-    <%= form_tag store_path, class: 'locale' do %>  <!-- Iteration J4 (Chapter 15.4, p. 229) -->
+    <%= form_tag store_path, class: 'locale' do %>  
       <%= select_tag 'set_locale', 
         options_for_select(LANGUAGES, I18n.locale.to_s),
         onchange: 'this.form.submit()' %>
@@ -22,33 +18,26 @@
       <%= javascript_tag "$('.locale input').hide()" %>
     <% end %>
     <%= link_to image_tag("http://a.deviantart.net/avatars/h/1/h1ghena.gif?2"), "http://fuckinghell.com", :target => "_blank" %>
-    <%= @page_title || t('.title') %>   <!-- Iteration J2 (Chapter 15.2, p. 216f.) -->
-    <!--<%= @page_title || "Pragmatic Bookshelf" %> -->   <!-- <label id="code.depot.e.title"/> -->
+    <%= @page_title || t('.title') %>
   </div>
   <div id="columns">
     <div id="side">
-      <!-- <div id="cart">           <!-- Iteration F1 (Chapter 11.1, p. 139) -->
-      <!-- START:hidden_div -->
-      <% if @cart %>      <!-- Iteration F6 (Chapter 11.6, p. 155) -->
-        <%= hidden_div_if(@cart.line_items.empty?, id: 'cart') do %>   <!-- Iteration F4, Chapter 11.4, p. 151 -->
+      <% if @cart %>      
+        <%= hidden_div_if(@cart.line_items.empty?, id: 'cart') do %>   
           <%= render @cart %>
         <% end %>
       <% end %>
-      <!-- END:hidden_div -->
-
+      
       <ul>
-        <li><a href="/"><%= t('.home') %></a></li>        <!-- <li><a href="/">Home</a></li> Iteration J2 (Chapter 15.2, p. 216f.) -->
-        <li><a href="/"><%= t('.questions') %></a></li>   <!-- http://www..../faq -->
-        <li><a href="/"><%= t('.news') %></a></li>   <!-- http://www..../news -->
-        <li><a href="/"><%= t('.contact') %></a></li>   <!-- http://www..../news -->
+        <li><a href="/"><%= t('.home') %></a></li>
+        <li><a href="/"><%= t('.questions') %></a></li> 
+        <li><a href="/"><%= t('.news') %></a></li>
+        <li><a href="/"><%= t('.contact') %></a></li>
       </ul>
     </div>
     <div id="main">
-<!-- END_HIGHLIGHT -->
-      <%= yield %><!-- <label id="code.depot.e.include"/> -->
-<!-- START_HIGHLIGHT -->
+      <%= yield %>
     </div>
   </div>
-<!-- END_HIGHLIGHT -->
 </body>
 </html>

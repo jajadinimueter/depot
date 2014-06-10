@@ -1,5 +1,5 @@
 class OrdersController < ApplicationController
-  include CurrentCart      # Iteration G1 (Chapter 12.1, p. 160)
+  include CurrentCart      
   before_action :set_cart, only: [:new, :create]
   before_action :set_order, only: [:show, :edit, :update, :destroy]
 
@@ -16,7 +16,7 @@ class OrdersController < ApplicationController
 
   # GET /orders/new
   def new
-     if @cart.line_items.empty?       # Iteration G1 (Chapter 12.1, p. 161)
+     if @cart.line_items.empty?       
       redirect_to store_url, notice: "Your cart is empty"
       return
     end
@@ -39,8 +39,8 @@ class OrdersController < ApplicationController
         Cart.destroy(session[:cart_id])
         session[:cart_id] = nil
     
-        # format.html { redirect_to store_url, notice: 'Thank you for your order.' }    # Iteration G1 (Chapter 12.1, p. 168)
-        format.html { redirect_to store_url, notice: I18n.t('.thanks') }    # Iteration J3 (Chapter 15.3, p. 227f.)
+        # format.html { redirect_to store_url, notice: 'Thank you for your order.' }    
+        format.html { redirect_to store_url, notice: I18n.t('.thanks') }    
         # format.html { redirect_to @order, notice: 'Order was successfully created.' }
         format.json { render action: 'show', status: :created, location: @order }
       else

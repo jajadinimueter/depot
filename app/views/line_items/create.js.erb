@@ -1,8 +1,8 @@
-$('#notice').hide();	// Iteration G1 (Chapter 12.1, p. 172)
+$('#notice').hide();	
 
-if ($('#cart tr').length == 1) { $('#cart').show('blind', 1000); } 		// Iteration F4 (Chapter 11.4, p. 150)
+if ($('#cart tr').length == 1) { $('#cart').show('blind', 1000); } 		
 
 $('#cart').html("<%= escape_javascript render(@cart) %>");
 
-$('#current_item').css({'background-color':'#A9BCF5'}).		// Iteration F3 (Chapter 11.3, p. 148)		// #88ff88
+$('#current_item').css({'background-color':'#A9BCF5'}).		
   animate({'background-color':'#045FB4'}, 1000);		// #114411

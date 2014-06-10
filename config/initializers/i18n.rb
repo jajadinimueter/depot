@@ -1,4 +1,4 @@
-#encoding: utf-8			# Iteration J1 (Chapter 15.1, p. 211)
+#encoding: utf-8			
 I18n.default_locale = :en
 
 LANGUAGES = [

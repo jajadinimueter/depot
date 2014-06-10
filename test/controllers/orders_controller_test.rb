@@ -33,7 +33,7 @@ class OrdersControllerTest < ActionController::TestCase
     end
 
     #assert_redirected_to order_path(assigns(:order))
-    assert_redirected_to store_path     # Iteration G1 (Chapter 12.1, p. 169)
+    assert_redirected_to store_path     
   end
 
   test "should show order" do

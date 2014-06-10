@@ -5,14 +5,14 @@
  -->
 
 
-<% if notice %>				<!-- Iteration D3 -->
+<% if notice %>				
 <p id="notice"><%= notice %></p>
 <% end %>
 
 <%= render @cart %>
 
 
-<h2>Your Cart</h2>      <!-- Iteration E3 (Chapter 10.3, p. 131) -->
+<h2>Your Cart</h2>      
 
 <table style="border:0; width:70%;">
     <!-- <tr class="table_line">            Old version (before Chapter 11, p. 136)
@@ -46,7 +46,7 @@
 <!-- Old version
 <ul>    
   <% @cart.line_items.each do |item| %>
-    <!-- <li><%= item.product.title %> &nbsp; <%= number_to_chf(item.product.price) %></li> # Iteration E1 ->
+    <!-- <li><%= item.product.title %> &nbsp; <%= number_to_chf(item.product.price) %></li> 
     <li><%= item.quantity %> &times; &nbsp; <%= item.product.title %> <%= number_to_chf(item.product.price * item.quantity) %></li>
   <% end %>
   <% if @cart.line_items.count > 1 %>
