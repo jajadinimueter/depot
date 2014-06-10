@@ -76,6 +76,8 @@ git diff a..b &nbsp;&nbsp;&nbsp; // check changes between two commits
 git commit --amend &nbsp;&nbsp;&nbsp; git push --force <repository> <branch> &nbsp;&nbsp;&nbsp; // edit a commit message after push (but before new pushes by anyone other)
 
 
+&nbsp;
+
 
 ## From server to working copy
 
@@ -88,6 +90,7 @@ git pull -rebase
 &nbsp;
 
 
+## Links
 
 * Cf. also this [Git Cheat Sheet](http://cheat.errtheblog.com/s/git).
 
