@@ -1,0 +1,102 @@
+# Files in the config/locales directory are used for internationalization
+# and are automatically loaded by Rails. If you want to use locales other
+# than English, add the necessary files in this directory.
+#
+# To use the locales, use `I18n.t`:
+#
+#     I18n.t 'hello'
+#
+# In views, this is aliased to just `t`:
+#
+#     <%= t('hello') %>
+#
+# To use a different locale, set it with `I18n.locale`:
+#
+#     I18n.locale = :es
+#
+# This would use the information in config/locales/es.yml.
+#
+# To learn more, please read the Rails Internationalization guide
+# available at http://guides.rubyonrails.org/i18n.html.
+
+#en:
+#  hello: "Hello world"
+
+
+#START:layout
+#START:main
+#START:cart
+#START:currency
+#START:checkout
+#START:flash
+de-de:
+
+#END:cart
+#END:checkout
+#END:flash
+#END:main
+#END:layout
+  number:
+    currency:
+      format:
+        unit:      "€"
+        precision: 2
+        separator: ","
+        delimiter: "'"
+        format:    "%u&nbsp;%n"
+#END:currency
+
+#START:errors
+  errors:
+    template:
+      body:        "Bei den folgenden Feldern gab es Probleme:"
+      header:       
+        one:       "1 Fehler verhinderte, dass dieses %{model} gespeichert wurde."
+        other:     "%{count} verhinderten, dass dieses %{model} gespeichert wurde."
+#END:errors
+
+#START:layout
+  layouts:
+    application:
+      title:       "Digitale Bücher"
+      home:        "Home"
+      questions:   "Fragen"
+      news:        "News"
+      contact:     "Kontakt"
+#END:layout
+
+#START:cart
+  carts:
+    cart:
+      title:       "Ihr Warenkorb"
+      empty:       "Warenkorb leeren"
+      checkout:    "Bezahlen"
+#END:cart
+
+#START:main
+  store:
+    index:
+      title_html:  "Ihr Katalog digitaler Bücher"
+      add_html:    "Zum Warenkorb hinzufügen"
+#END:main
+
+#START:checkout
+  orders:
+    new:
+      legend:       "Bitte geben Sie Ihre Daten an."
+    form:
+      name:         "Name"
+      address_html: "Adresse"
+      email:        "E-mail"
+      pay_type:     "Zahlungsmethode"
+      pay_prompt_html: "Bitte wählen Sie eine Zahlungsmethode."
+      submit:       "Bestellen"
+    payment_types:
+      check: "Check" 
+      credit_card: "Kreditkarte" 
+      purchase_order: "Rechnung"
+#END:checkout
+
+#START:flash
+  thanks:          "Danke für Ihre Bestellung!"
+#END:flash
