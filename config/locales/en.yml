@@ -58,7 +58,7 @@ en:
 #START:layout
   layouts:
     application:
-      title:       "Digital Books"
+      title:       "Curiosities"
       home:        "Home"
       questions:   "Questions"
       news:        "News"
@@ -76,7 +76,7 @@ en:
 #START:main
   store:
     index:
-      title_html:  "Your Digital Books Catalog"
+      title_html:  "Your Curiosities Catalog"
       add_html:    "Add to Cart"
 #END:main
 

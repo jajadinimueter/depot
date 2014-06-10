@@ -13,11 +13,12 @@
  */
 
 #banner {
-  background: #A9E2F3;   // #9c9
+  background: red;
   padding: 10px;
   border-bottom: 2px solid;
-  font: small-caps 40px/40px "Tahoma", serif;
-  color: #08298A;      // #282
+  font: 40px/40px "Arial";
+  font-weight: bold;
+  color: black;
   text-align: center;
 
   img {
@@ -35,7 +36,7 @@
 }
 
 #columns {
-  background: #045FB4;    //#141
+  background: black;    //#141
 
   #main {
     margin-left: 17em;
@@ -47,7 +48,8 @@
     float: left;
     padding: 1em 2em;
     width: 13em;
-    background: #045FB4;    // #141
+    background: black; 
+    color: white;
   
     form, div {
       display: inline;

@@ -58,7 +58,7 @@ de-ch:
 #START:layout
   layouts:
     application:
-      title:       "Digitale Bücher"
+      title:       "Kuriositäten"
       home:        "Home"
       questions:   "Fragen"
       news:        "News"
@@ -76,7 +76,7 @@ de-ch:
 #START:main
   store:
     index:
-      title_html:  "Ihr Katalog digitaler Bücher"
+      title_html:  "Ihr Katalog von Kuriositäten"
       add_html:    "Zum Warenkorb hinzufügen"
 #END:main
 
